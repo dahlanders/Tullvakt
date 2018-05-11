@@ -34,7 +34,9 @@ namespace Tulltestaren
         [TestMethod]
         public void Hello()
         {
-            var test = TestaTullen.Program.Hello("monday", "car", 1000,"10:00");
+            var test = TestaTullen.Program.Hello("monday", "car", 1000, DateTime.Parse("10:00"),DateTime.Parse("06:00"),DateTime.Parse("18:00"));
+
+            Assert.AreEqual(1000,test);
         }
     }
 }
