@@ -30,5 +30,11 @@ namespace Tulltestaren
 
             Assert.AreEqual(700,test);
         }
+
+        [TestMethod]
+        public void Hello()
+        {
+            var test = TestaTullen.Program.Hello("monday", "car", 1000,"10:00");
+        }
     }
 }
